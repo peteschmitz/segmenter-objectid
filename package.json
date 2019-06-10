@@ -1,0 +1,46 @@
+{
+    "name": "@~graphite/segmenter-objectid",
+    "version": "1.0.0",
+    "description": "Segment utilities for ObjectID types. Conveniently bucket data based on an ObjectID hash.",
+    "main": "./bin/index.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "test:debug": "node --inspect node_modules/.bin/jest --runInBand"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/peteschmitz/segmenter-objectid.git"
+    },
+    "keywords": [
+        "segmenter",
+        "segment",
+        "segmentation",
+        "ab",
+        "bucket",
+        "bucketing",
+        "mongo",
+        "mongodb",
+        "mongoose",
+        "objectid"
+    ],
+    "author": "Pete Schmitz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/peteschmitz/segmenter-objectid/issues"
+    },
+    "homepage": "https://github.com/peteschmitz/segmenter-objectid#readme",
+    "devDependencies": {
+        "@types/bson": "^4.0.0",
+        "@types/jest": "^24.0.13",
+        "babel-jest": "^24.8.0",
+        "jest": "^24.8.0",
+        "ts-jest": "^24.0.2",
+        "tslint": "^5.16.0",
+        "typescript": "^3.5.1"
+    },
+    "dependencies": {
+        "@~graphite/segmenter": "^1.0.4",
+        "bson": "^4.0.2"
+    }
+}
