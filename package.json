@@ -1,6 +1,6 @@
 {
     "name": "@~graphite/segmenter-objectid",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Segment utilities for ObjectID types. Conveniently bucket data based on an ObjectID hash.",
     "main": "./bin/index.js",
     "scripts": {

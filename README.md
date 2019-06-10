@@ -22,6 +22,8 @@ npm i @~graphite/segmenter-objectid
 ## Explicit usage 
 
 ```javascript
+import { ObjectIdSegmenter } from "@~graphite/segmenter-objectid";
+
 const segmenter = new ObjectIdSegmenter();
 
 segmenter.segments(new ObjectId("xxxxxxxxxxxxxxxxxx000000"), ["A", "B"], ["X", "Y"]); // ["A", "X"]
@@ -34,6 +36,8 @@ segmenter.segments(new ObjectId("xxxxxxxxxxxxxxxxxx00000e"), ["A", "B"], ["X", "
 ## Extension usage 
 
 ```javascript
+import "@~graphite/segmenter-objectid";
+
 new ObjectId("xxxxxxxxxxxxxxxxxx000000").segments(["A", "B"], ["X", "Y"]); // ["A", "X"]
 new ObjectId("xxxxxxxxxxxxxxxxxx000001").segments(["A", "B"], ["X", "Y"]); // ["A", "Y"]
 new ObjectId("xxxxxxxxxxxxxxxxxx00000d").segments(["A", "B"], ["X", "Y"]); // ["A", "Y"]
